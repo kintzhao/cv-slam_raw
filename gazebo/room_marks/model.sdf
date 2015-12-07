@@ -1,0 +1,1245 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="room_marks">
+<!--========link========================================================- -->
+<!--====link_column_1===- -->
+    <link name='link_column_1'>
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>2.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                   <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+
+      </visual>
+    </link>  
+ <!--====link_column_2===- -->
+     <link name='link_column_2'>
+      <pose>0 8 0 0 0 0</pose>
+      <inertial>
+        <mass>2.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                   <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </visual>
+    </link> 
+<!--====link_column_3===- -->
+     <link name='link_column_3'>
+      <pose>8 8 0 0 0 0</pose>
+      <inertial>
+        <mass>2.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                   <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </visual>
+    </link> 
+<!--====link_column_4===- -->
+     <link name='link_column_4'>
+      <pose>8 0 0 0 0 0</pose>
+      <inertial>
+        <mass>2.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                   <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </visual>
+    </link> 
+<!--====link_ceiling===- -->
+     <link name='link_ceiling'>
+      <pose>4 4 1.2 0 0 0</pose>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>12 12 0.2</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                   <size>12 12 0.2</size>
+                </box>
+        </geometry>
+      </visual>
+    </link> 
+ 
+
+<!--=================================mark=================================================================================- -->
+<!--=====mark1====- -->
+    <link name='mark_1'>
+      <pose>1.0 1.0 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/1/scripts</uri>
+            <uri>model://room_marks/materials/1/textures</uri>
+            <name>room_marks/Diffuse_1</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark2====- -->
+    <link name='mark_2'>
+      <pose>2.5 1.0 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision2'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/2/scripts</uri>
+            <uri>model://room_marks/materials/2/textures</uri>
+            <name>room_marks/Diffuse_2</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark3====- -->
+    <link name='mark_3'>
+      <pose>4 1.0 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/3/scripts</uri>
+            <uri>model://room_marks/materials/3/textures</uri>
+            <name>room_marks/Diffuse_3</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark4====- -->
+    <link name='mark_4'>
+      <pose>5.5 1.0 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/4/scripts</uri>
+            <uri>model://room_marks/materials/4/textures</uri>
+            <name>room_marks/Diffuse_4</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+ 
+<!--=====mark5====- -->
+    <link name='mark_5'>
+      <pose>7.0 1.0 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/5/scripts</uri>
+            <uri>model://room_marks/materials/5/textures</uri>
+            <name>room_marks/Diffuse_5</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+ 
+
+<!--=====mark6====- -->
+    <link name='mark_6'>
+      <pose>1.0 2.5 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/6/scripts</uri>
+            <uri>model://room_marks/materials/6/textures</uri>
+            <name>room_marks/Diffuse_6</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark7====- -->
+    <link name='mark_7'>
+      <pose>2.5 2.5 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/7/scripts</uri>
+            <uri>model://room_marks/materials/7/textures</uri>
+            <name>room_marks/Diffuse_7</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark8====- -->
+    <link name='mark_8'>
+      <pose>4 2.5 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/8/scripts</uri>
+            <uri>model://room_marks/materials/8/textures</uri>
+            <name>room_marks/Diffuse_8</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark9====- -->
+    <link name='mark_9'>
+      <pose>5.5 2.5 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/9/scripts</uri>
+            <uri>model://room_marks/materials/9/textures</uri>
+            <name>room_marks/Diffuse_9</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+ 
+<!--=====mark10====- -->
+    <link name='mark_10'>
+      <pose>7.0 2.5 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/10/scripts</uri>
+            <uri>model://room_marks/materials/10/textures</uri>
+            <name>room_marks/Diffuse_10</name>
+          </script>
+        </material>
+      </visual>
+    </link>  
+
+<!--=====mark1====- -->
+    <link name='mark_11'>
+      <pose>1.0 4.0 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/11/scripts</uri>
+            <uri>model://room_marks/materials/11/textures</uri>
+            <name>room_marks/Diffuse_11</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark12====- -->
+    <link name='mark_12'>
+      <pose>2.5 4 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/12/scripts</uri>
+            <uri>model://room_marks/materials/12/textures</uri>
+            <name>room_marks/Diffuse_12</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark13====- -->
+    <link name='mark_13'>
+      <pose>4 4 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/13/scripts</uri>
+            <uri>model://room_marks/materials/13/textures</uri>
+            <name>room_marks/Diffuse_13</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark14====- -->
+    <link name='mark_14'>
+      <pose>5.5 4 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/14/scripts</uri>
+            <uri>model://room_marks/materials/14/textures</uri>
+            <name>room_marks/Diffuse_14</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+ 
+<!--=====mark15====- -->
+    <link name='mark_15'>
+      <pose>7.0 4 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/15/scripts</uri>
+            <uri>model://room_marks/materials/15/textures</uri>
+            <name>room_marks/Diffuse_15</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+ 
+
+<!--=====mark16====- -->
+    <link name='mark_16'>
+      <pose>1.0 5.5 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/16/scripts</uri>
+            <uri>model://room_marks/materials/16/textures</uri>
+            <name>room_marks/Diffuse_16</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark17====- -->
+    <link name='mark_17'>
+      <pose>2.5 5.5 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/17/scripts</uri>
+            <uri>model://room_marks/materials/17/textures</uri>
+            <name>room_marks/Diffuse_17</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark18====- -->
+    <link name='mark_18'>
+      <pose>4 5.5 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/18/scripts</uri>
+            <uri>model://room_marks/materials/18/textures</uri>
+            <name>room_marks/Diffuse_18</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+<!--=====mark19====- -->
+    <link name='mark_19'>
+      <pose>5.5 5.5 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/19/scripts</uri>
+            <uri>model://room_marks/materials/19/textures</uri>
+            <name>room_marks/Diffuse_19</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+ 
+<!--=====mark20====- -->
+    <link name='mark_20'>
+      <pose>7.0 5.5 1.1 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room_marks/materials/20/scripts</uri>
+            <uri>model://room_marks/materials/20/textures</uri>
+            <name>room_marks/Diffuse_20</name>
+          </script>
+        </material>
+      </visual>
+    </link>  
+
+
+
+<!--========================joint========================================================================================- -->
+
+    <joint name="camera_joint_1" type="revolute">
+      <child>link_column_1</child>
+      <parent>link_ceiling</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+ 
+    <joint name="camera_joint_2" type="revolute">
+      <child>link_column_2</child>
+      <parent>link_ceiling</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+    <joint name="camera_joint_3" type="revolute">
+      <child>link_column_3</child>
+      <parent>link_ceiling</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+    <joint name="camera_joint_4" type="revolute">
+      <child>link_column_4</child>
+      <parent>link_ceiling</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=================joint_mark===============================================================================- -->
+<!--=====joint_mark1====- -->
+    <joint name="mark_joint_1" type="revolute">
+      <child>mark_1</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark2====- -->
+    <joint name="mark_joint_2" type="revolute">
+      <child>mark_2</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+<!--=====joint_mark3====- -->
+    <joint name="mark_joint_3" type="revolute">
+      <child>mark_3</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark4====- -->
+    <joint name="mark_joint_4" type="revolute">
+      <child>mark_4</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark5====- -->
+    <joint name="mark_joint_5" type="revolute">
+      <child>mark_5</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark6====- -->
+    <joint name="mark_joint_6" type="revolute">
+      <child>mark_6</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark7====- -->
+    <joint name="mark_joint_7" type="revolute">
+      <child>mark_7</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+<!--=====joint_mark8====- -->
+    <joint name="mark_joint_8" type="revolute">
+      <child>mark_8</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark9====- -->
+    <joint name="mark_joint_9" type="revolute">
+      <child>mark_9</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark10====- -->
+    <joint name="mark_joint_10" type="revolute">
+      <child>mark_10</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark11====- -->
+    <joint name="mark_joint_11" type="revolute">
+      <child>mark_11</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark12====- -->
+    <joint name="mark_joint_12" type="revolute">
+      <child>mark_12</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+<!--=====joint_mark13====- -->
+    <joint name="mark_joint_13" type="revolute">
+      <child>mark_13</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark14====- -->
+    <joint name="mark_joint_14" type="revolute">
+      <child>mark_14</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark15====- -->
+    <joint name="mark_joint_15" type="revolute">
+      <child>mark_15</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark16====- -->
+    <joint name="mark_joint_16" type="revolute">
+      <child>mark_16</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark17====- -->
+    <joint name="mark_joint_17" type="revolute">
+      <child>mark_17</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+<!--=====joint_mark18====- -->
+    <joint name="mark_joint_18" type="revolute">
+      <child>mark_18</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark19====- -->
+    <joint name="mark_joint_19" type="revolute">
+      <child>mark_19</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+<!--=====joint_mark20====- -->
+    <joint name="mark_joint_20" type="revolute">
+      <child>mark_20</child>
+      <parent>link_ceiling</parent>
+      <pose>0 0 1.1 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+
+
+  </model>
+</sdf>

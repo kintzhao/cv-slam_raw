@@ -1,0 +1,17 @@
+<calibFile>./data/no_distortion_caliBoard.cal</calibFile>
+<cvCalibFile>./data/camcalibrate_small_caliBoard.xml</cvCalibFile>
+
+<isundistort>1</isundistort>
+
+<imgW>640</imgW>
+<imgH>480</imgH>
+
+<ht5>3.54</ht5>
+<sideSizes5>21.6</sideSizes5>
+
+<ht6>3.54</ht6>
+<sideSizes6>21.6</sideSizes6>
+
+<processingType>2</processingType>
+<sonyCamZoom>small</sonyCamZoom>
+

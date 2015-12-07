@@ -1,0 +1,15 @@
+material room_marks/Diffuse_10
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture 10.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

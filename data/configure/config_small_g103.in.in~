@@ -1,0 +1,15 @@
+<calibFile>./data/no_distortion_big.cal</calibFile>
+<cvCalibFile>./data/camcalibrate_big.xml</cvCalibFile>
+
+<imgW>640</imgW>
+<imgH>480</imgH>
+
+<ht5>3.54</ht5>
+<sideSizes5>21.6</sideSizes5>
+
+<ht6>3.54</ht6>
+<sideSizes6>21.6</sideSizes6>
+
+<processingType>2</processingType>
+<sonyCamZoom>big</sonyCamZoom>
+

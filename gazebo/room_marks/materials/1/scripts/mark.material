@@ -1,0 +1,31 @@
+material room_marks/Diffuse_1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture 1.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}
+
+material room_marks/Diffuse_test
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ss.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

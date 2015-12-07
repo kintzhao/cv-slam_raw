@@ -1,0 +1,249 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="room">
+    <link name='link_1'>
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>2.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                   <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </visual>
+    </link>  
+ 
+     <link name='link_2'>
+      <pose>0 5 0 0 0 0</pose>
+      <inertial>
+        <mass>2.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                   <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </visual>
+    </link> 
+     <link name='link_3'>
+      <pose>5 5 0 0 0 0</pose>
+      <inertial>
+        <mass>2.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                   <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </visual>
+    </link> 
+     <link name='link_4'>
+      <pose>5 0 0 0 0 0</pose>
+      <inertial>
+        <mass>2.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                   <size>.2 .2 2.4</size>
+                </box>
+        </geometry>
+      </visual>
+    </link> 
+
+     <link name='link'>
+      <pose>2.5 2.5 1.2 0 0 0</pose>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>6 6 0.2</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                   <size>6 6 0.2</size>
+                </box>
+        </geometry>
+      </visual>
+    </link> 
+ 
+
+
+    <link name='mark_1'>
+      <pose>0.8 0.8 1.10 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+                <box>
+                  <size>.496 .496 .01</size>
+                </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://room/materials/1/scripts</uri>
+            <uri>model://room/materials/1/textures</uri>
+            <name>room/Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link>     
+
+
+
+
+
+
+    <joint name="camera_joint_1" type="revolute">
+      <child>link_1</child>
+      <parent>link</parent>
+      <axis>
+        <xyz>0 0 -2</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+ 
+    <joint name="camera_joint_2" type="revolute">
+      <child>link_2</child>
+      <parent>link</parent>
+      <axis>
+        <xyz>0 0 -2</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+    <joint name="camera_joint_3" type="revolute">
+      <child>link_3</child>
+      <parent>link</parent>
+      <axis>
+        <xyz>0 0 -2</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+    <joint name="camera_joint_4" type="revolute">
+      <child>link_4</child>
+      <parent>link</parent>
+      <axis>
+        <xyz>0 0 -2</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+    <joint name="mark_joint_4" type="revolute">
+      <child>mark_1</child>
+      <parent>link</parent>
+      <axis>
+        <xyz>0 0 -2</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+
+  </model>
+</sdf>

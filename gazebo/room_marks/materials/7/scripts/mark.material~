@@ -1,0 +1,15 @@
+material room_marks/Diffuse_8
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture 8.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}
